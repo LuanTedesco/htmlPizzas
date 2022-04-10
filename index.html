@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Vendas de Pizzas</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <header>
+    <ul>
+      <li>
+        <h1>Vila Pedrini</h1>
+      </li>
+      <li>
+        <h2>Vendas de Pizzas</h2>
+      </li>
+    </ul>
+  </header>
+
+  <section>
+    <form>
+      <h3>Selecione a pizza que foi vendida</h3>
+      <ul>
+        <li><input type="radio" id="mussarela" name="pizzas"><label for="mussarela">Mussarela</label></li>
+        <li><input type="radio" id="portuguesa" name="pizzas"><label for="portuguesa">Portuguesa</label></li>
+        <li><input type="radio" id="frango" name="pizzas"><label for="frango">Frango</label></li>
+      </ul>
+    </form>
+  </section>
+
+  <section>
+    <button id="vendas">Vendas</button>
+    <button id="estorno">Estorno</button>
+  </section>
+
+  <section id="table">
+    <table>
+      <tr>
+        <th>Sabores</th>
+        <th>Quantidade</th>
+        <th>Valores</th>
+      </tr>
+      <tr>
+        <td>Mussarela</td>
+        <td id="resultadoMussarela"></td>
+        <td id="vendaMussarela"></td>
+      </tr>
+      <tr>
+        <td>Portuguesa</td>
+        <td id="resultadoPortuguesa"></td>
+        <td id="vendaPortuguesa"></td>
+      </tr>
+      <tr>
+        <td>Frango</td>
+        <td id="resultadoFrango"></td>
+        <td id="vendaFrango"></td>
+      </tr>
+    </table>
+  </section>
+
+  <section>
+    <button id="export">Planilha</button>
+  </section>
+
+  <script src="tableToExcel.js"></script>
+  <script src="javascript.js"></script>
+</body>
+
+</html>
